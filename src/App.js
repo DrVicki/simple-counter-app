@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import Button from './components/Button';
 
+import './style.css';
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,11 +21,11 @@ function App() {
     <div className="app">
       <p>Count: {count}</p>
       <div className="buttons">
-        <Button title={"Decrement"} action={decrementCount} />
+        <Button title={"Decrease Count"} action={decrementCount} />
 
-        <Button title={"Increment"} action={incrementCount} />
+        <Button title={"Increase Count"} action={incrementCount} />
 
-        <Button title={"Reset"} action={resetCount} />
+        <Button title={"Reset Count"} action={resetCount} />
       </div>
     </div>
   );
